@@ -23,7 +23,7 @@ export default function Whyus() {
 
   return (
     <section className="whyus wrapper">
-      <img className="whyus-mockup" src="/src/assets/laptop.png" alt="" />
+      <img className="whyus-mockup" src="/src/assets/mockup.png" alt="" />
       <h1 className="whyus-header">Why you should choose us??</h1>
       <div className="whyus-columnsWrapper">
         {columns.map((column, i) => (
