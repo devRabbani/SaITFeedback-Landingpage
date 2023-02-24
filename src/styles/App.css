@@ -7,7 +7,6 @@
 
 .heroSection-body {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -16,6 +15,14 @@
   text-align: center;
 }
 
+.whyus-mockup,
+.heroSection-content {
+  flex-basis: 100%;
+}
+
+.whyus-mockup {
+  max-width: 50%;
+}
 .heroSection-para {
   margin-block: 0.7rem 1.8rem;
   max-width: 800px;
@@ -38,14 +45,6 @@
 }
 
 /* Why Us */
-
-.whyus-mockup {
-  width: 70%;
-  margin-inline: auto;
-  margin-top: -25%;
-  z-index: 99;
-  position: relative;
-}
 
 .whyus-header {
   text-align: center;
