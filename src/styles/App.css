@@ -1,0 +1,83 @@
+/* Hero Section */
+.heroSection {
+  background: #d8d8f6;
+  background: radial-gradient(circle, hsl(240, 63%, 85%) 0%, #845ec2 100%);
+  position: relative;
+}
+
+.heroSection-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  z-index: 99;
+  position: relative;
+  text-align: center;
+}
+
+.heroSection-para {
+  margin-block: 0.7rem 1.8rem;
+  max-width: 800px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.btn-getStarted {
+  background-color: var(--color-blue);
+  color: white;
+  font-weight: 500;
+  font-size: 2rem;
+  padding: 0.9rem 3rem;
+}
+
+.waveBg {
+  width: 100%;
+  object-fit: cover;
+  margin-top: -4rem;
+}
+
+/* Why Us */
+
+.whyus-mockup {
+  width: 70%;
+  margin-inline: auto;
+  margin-top: -25%;
+  z-index: 99;
+  position: relative;
+}
+
+.whyus-header {
+  text-align: center;
+  margin-block: 3rem 7rem;
+}
+
+.whyus-columnsWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.whyus-column {
+  flex-basis: 100%;
+  /* max-width: 200px; */
+  text-align: center;
+}
+
+.whyus-column img {
+  max-width: 180px;
+  margin-inline: auto;
+}
+
+.whyus-columnHeader {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-block: 0.5rem;
+  color: var(--color-blue);
+}
+
+.whyus-columnInfo {
+  width: 80%;
+  margin-inline: auto;
+  font-size: 1.6rem;
+}
