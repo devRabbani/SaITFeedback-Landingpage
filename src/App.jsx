@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <HeroSection />
-      <Whyus />
+      {/* <Whyus /> */}
       <Features />
     </>
   )

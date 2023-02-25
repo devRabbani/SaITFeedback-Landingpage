@@ -112,14 +112,6 @@ button {
   outline: none;
   background-color: transparent;
   cursor: pointer;
-  font-size: 1.9rem;
-  border-radius: 0.7rem;
+  border-radius: 0.8rem;
   padding: 0.8rem 2.3rem;
-}
-
-/* Common STyles */
-.btnDiv {
-  display: flex;
-  align-items: center;
-  gap: 1.7rem;
 }
