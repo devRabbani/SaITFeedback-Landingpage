@@ -16,6 +16,17 @@
   text-align: center;
 }
 
+.heroSection-body h1 {
+  background: linear-gradient(to left, #953030, #34247c);
+  font-size: 3.8rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* background: linear-gradient(to left,#953030,#3d2b90);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+
 .heroSection-para {
   margin-block: 0.7rem 1.8rem;
   max-width: 800px;
