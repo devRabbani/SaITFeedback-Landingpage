@@ -1,48 +1,94 @@
 /* Hero Section */
 .heroSection {
-  background: #d8d8f6;
-  background: radial-gradient(circle, hsl(240, 63%, 85%) 0%, #845ec2 100%);
+  /* background: #d8d8f6;
+  background: radial-gradient(circle, hsl(240, 63%, 85%) 0%, #845ec2 100%); */
   position: relative;
+}
+
+.heroSection::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: #d8d8f6;
+  background: radial-gradient(circle, hsl(0deg 63% 85%) 0%, #845ec2 100%);
 }
 
 .heroSection-body {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   min-height: 100vh;
+  gap: 2rem;
   z-index: 99;
   position: relative;
-  text-align: center;
 }
 
-.whyus-mockup,
+.heroSection-image {
+  max-width: 95%;
+  margin-left: auto;
+  filter: drop-shadow(1px 10px 10px rgba(0, 0, 0, 0.3));
+}
+
 .heroSection-content {
-  flex-basis: 100%;
+  text-align: left;
+  position: relative;
 }
 
-.whyus-mockup {
-  max-width: 50%;
+.heroSection-content h1 {
+  line-height: 1.15;
 }
 .heroSection-para {
   margin-block: 0.7rem 1.8rem;
-  max-width: 800px;
-  text-align: center;
+  max-width: 500px;
   font-weight: 500;
 }
 
+.btnDiv {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  position: relative;
+}
+
+.btnDiv::after {
+  content: '';
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -14rem;
+  background-repeat: space;
+  opacity: 0.5;
+  background-image: url('/heroBottom.svg');
+}
+
 .btn-getStarted {
-  background-color: var(--color-blue);
+  background-color: var(--color-primary);
   color: white;
   font-weight: 500;
   font-size: 2rem;
   padding: 0.9rem 3rem;
+  box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.25);
+}
+.btn-knowMore {
+  font-size: 1.7rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.1rem;
+  text-underline-offset: 0.3em;
+  padding: 0;
+  margin-top: -0.6rem;
 }
 
-.waveBg {
-  width: 100%;
-  object-fit: cover;
-  margin-top: -4rem;
-}
+/* .bottomSvg {
+  position: absolute;
+  height: 100px;
+  left: 0;
+  bottom: -15rem;
+  opacity: 0.6;
+} */
 
 /* Why Us */
 

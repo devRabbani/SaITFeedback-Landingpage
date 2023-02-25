@@ -1,3 +1,5 @@
+import bottomSvg from '../../assets/heroBottom.svg'
+
 export default function HeroSection() {
   return (
     <section className="heroSection">
@@ -11,12 +13,19 @@ export default function HeroSection() {
             easy-to-read charts. Enhance communication channels and improve
             education with our feedback app.
           </p>
-          <button className="btn-getStarted">Get Started for a Demo</button>
+          <div className="btnDiv">
+            <button className="btn-getStarted">Get Started</button>
+            <button className="btn-knowMore">See Features</button>
+          </div>
+          {/* <img src={bottomSvg} alt="" className="bottomSvg" /> */}
         </div>
-        <img className="whyus-mockup" src="/src/assets/mockup.png" alt="" />
-      </div>
 
-      {/* <img className="waveBg" src="/src/assets/wave.svg" alt="" /> */}
+        <img
+          className="heroSection-image"
+          src="/src/assets/mockup.png"
+          alt=""
+        />
+      </div>
     </section>
   )
 }
