@@ -1,7 +1,5 @@
 /* Hero Section */
 .heroSection {
-  /* background: #d8d8f6;
-  background: radial-gradient(circle, hsl(240, 63%, 85%) 0%, #845ec2 100%); */
   position: relative;
 }
 
@@ -24,11 +22,17 @@
   gap: 2rem;
   z-index: 99;
   position: relative;
+  width: 95%;
+  margin-inline: auto;
+  max-width: 1200px;
+}
+
+.imgDiv {
+  margin-left: auto;
+  max-width: 95%;
 }
 
 .heroSection-image {
-  max-width: 95%;
-  margin-left: auto;
   filter: drop-shadow(1px 10px 10px rgba(0, 0, 0, 0.3));
 }
 
@@ -87,14 +91,6 @@
   margin-top: -0.6rem;
 }
 
-/* .bottomSvg {
-  position: absolute;
-  height: 100px;
-  left: 0;
-  bottom: -15rem;
-  opacity: 0.6;
-} */
-
 /* Why Us */
 
 .whyus {
@@ -116,7 +112,6 @@
 
 .whyus-column {
   flex-basis: 100%;
-  /* max-width: 200px; */
   text-align: center;
 }
 
@@ -139,9 +134,7 @@
 }
 
 /* Features */
-/* .features {
-  padding-block: 5rem;
-} */
+
 .feature-row {
   display: flex;
   gap: 1rem;
@@ -366,20 +359,39 @@ footer a {
   /* Hero Section */
   .heroSection-body {
     grid-template-columns: 1fr;
-    gap: 5rem;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0;
     align-items: flex-start;
-    padding-block: 2rem 7rem;
+    width: 100%;
   }
 
-  .heroSection-image {
+  .heroSection::after {
+    content: none;
+  }
+
+  .imgDiv {
     width: 100%;
+    max-width: 100%;
+    height: 100%;
     order: -1;
+    background: #845ec2;
+    background: radial-gradient(circle, hsl(0deg 63% 85%) 0%, #845ec2 100%);
+    padding-block: 2rem;
+    position: sticky;
+    top: 0;
+    display: grid;
+    place-items: center;
+  }
+  .heroSection-image {
     object-fit: contain;
-    margin-inline: auto;
     height: 36rem;
   }
   .heroSection-content {
     text-align: center;
+    background-color: white;
+    z-index: 99;
+    padding: 2rem 2.5% 7rem;
+    height: 100%;
   }
 
   .heroSection-content h1 {

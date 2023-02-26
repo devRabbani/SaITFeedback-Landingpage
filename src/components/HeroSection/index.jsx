@@ -4,7 +4,7 @@ import { BsArrowRight } from 'react-icons/bs'
 export default function HeroSection({ targetRef }) {
   return (
     <section className="heroSection">
-      <div className="heroSection-body wrapper">
+      <div className="heroSection-body">
         <div className="heroSection-content">
           <h4>SaITFeedback is only for SaIT College Students</h4>
           <h1>All in one student's feedback application</h1>
@@ -32,12 +32,13 @@ export default function HeroSection({ targetRef }) {
             </button>
           </div>
         </div>
-
-        <img
-          className="heroSection-image"
-          src={mockup}
-          alt="Mockup of SaitFeedback"
-        />
+        <div className="imgDiv">
+          <img
+            className="heroSection-image"
+            src={mockup}
+            alt="Mockup of SaitFeedback"
+          />
+        </div>
       </div>
     </section>
   )
