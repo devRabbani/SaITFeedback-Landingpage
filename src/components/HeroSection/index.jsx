@@ -1,6 +1,7 @@
-import bottomSvg from '../../assets/heroBottom.svg'
+import mockup from '../../assets/mockup.png'
+import { BsArrowRight } from 'react-icons/bs'
 
-export default function HeroSection() {
+export default function HeroSection({ targetRef }) {
   return (
     <section className="heroSection">
       <div className="heroSection-body wrapper">
@@ -14,16 +15,28 @@ export default function HeroSection() {
             education with our feedback app.
           </p>
           <div className="btnDiv">
-            <button className="btn-getStarted">Get Started</button>
-            <button className="btn-knowMore">See Features</button>
+            <a
+              className="btn-getStarted"
+              href="https://www.canwebe.tech/form/contact"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Get Started <BsArrowRight />
+            </a>
+
+            <button
+              className="btn-knowMore"
+              onClick={() => targetRef.current.scrollIntoView()}
+            >
+              See Features
+            </button>
           </div>
-          {/* <img src={bottomSvg} alt="" className="bottomSvg" /> */}
         </div>
 
         <img
           className="heroSection-image"
-          src="/src/assets/mockup.png"
-          alt=""
+          src={mockup}
+          alt="Mockup of SaitFeedback"
         />
       </div>
     </section>

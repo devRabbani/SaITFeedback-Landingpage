@@ -21,6 +21,9 @@
   font: inherit;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
 /*
   Typographic tweaks!
   4. Add accessible line-height
@@ -114,4 +117,5 @@ button {
   cursor: pointer;
   border-radius: 0.8rem;
   padding: 0.8rem 2.3rem;
+  line-height: 1;
 }

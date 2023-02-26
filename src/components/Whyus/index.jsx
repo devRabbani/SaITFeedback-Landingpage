@@ -1,8 +1,9 @@
 import admin from '../../assets/admin.svg'
 import genuine from '../../assets/genuine.svg'
 import otp from '../../assets/otp.svg'
+import React from 'react'
 
-export default function Whyus() {
+export default React.forwardRef(function Whyus(_, ref) {
   const columns = [
     {
       img: genuine,
@@ -22,18 +23,19 @@ export default function Whyus() {
   ]
 
   return (
-    <section className="whyus wrapper">
-      <img className="whyus-mockup" src="/src/assets/mockup.png" alt="" />
-      <h1 className="whyus-header">Why you should choose us??</h1>
-      <div className="whyus-columnsWrapper">
-        {columns.map((column, i) => (
-          <div key={i} className="whyus-column">
-            <img src={column.img} alt={column.name} />
-            <p className="whyus-columnHeader">{column.name}</p>
-            <p className="whyus-columnInfo">{column.info}</p>
-          </div>
-        ))}
+    <section ref={ref} className="whyus">
+      <div className="wrapper">
+        <h1 className="whyus-header">Why you should choose us??</h1>
+        <div className="whyus-columnsWrapper">
+          {columns.map((column, i) => (
+            <div key={i} className="whyus-column">
+              <img src={column.img} alt={column.name} />
+              <p className="whyus-columnHeader">{column.name}</p>
+              <p className="whyus-columnInfo">{column.info}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   )
-}
+})
