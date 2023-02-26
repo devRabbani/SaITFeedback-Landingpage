@@ -7,7 +7,7 @@ export default function HeroSection({ targetRef }) {
       <div className="heroSection-body">
         <div className="heroSection-content">
           <h4>SaITFeedback is only for SaIT College Students</h4>
-          <h1>All in one student's feedback application</h1>
+          <h1>All In One Student's Feedback Application</h1>
           <p className="heroSection-para">
             Our feedback app bridges communication gaps in education. Features
             include anonymous feedback, OTP verification, admin dashboard,
@@ -17,11 +17,11 @@ export default function HeroSection({ targetRef }) {
           <div className="btnDiv">
             <a
               className="btn-getStarted"
-              href="https://www.canwebe.tech/form/contact"
+              href="https://www.canwebe.tech/form/contact?refer=https://cwbedufeedback.netlify.app"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Get Started <BsArrowRight />
+              Contact Us <BsArrowRight />
             </a>
 
             <button

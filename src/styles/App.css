@@ -236,6 +236,10 @@
   position: relative;
 }
 
+.laptop img {
+  filter: drop-shadow(0 -10px 20px rgba(0, 0, 0, 0.3));
+}
+
 .laptop iframe {
   position: absolute;
   height: 81.3%;
@@ -472,14 +476,14 @@ footer a {
   .heroSection-content h1 {
     font-size: 3.5rem;
     line-height: 1.15;
-    text-transform: capitalize;
-    background: linear-gradient(45deg, rgb(52 28 188), #cb258f);
+    background: linear-gradient(45deg, rgb(52 28 188), #cb25ac);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   .heroSection-image {
     margin-left: -0.7rem;
+    filter: drop-shadow(1px 10px 5px rgba(0, 0, 0, 0.35));
   }
 
   .heroSection-para {

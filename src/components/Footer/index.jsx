@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="contact">
         <p>Get started with a demo</p>
         <a
-          href="https://www.canwebe.tech/form/contact"
+          href="https://www.canwebe.tech/form/contact?refer=https://cwbedufeedback.netlify.app"
           target="_blank"
           rel="noopener noreferrer"
         >
