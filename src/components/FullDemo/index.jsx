@@ -1,4 +1,4 @@
-import laptop from '../../assets/laptop.png'
+import laptop from "../../assets/laptop.png"
 
 export default function FullDemo() {
   return (
@@ -7,7 +7,7 @@ export default function FullDemo() {
         <div className="laptop">
           <img src={laptop} alt="Demo Laptop" />
           <iframe
-            src="https://www.youtube.com/embed/Gvp0FpMNtS0"
+            src="https://www.youtube.com/embed/VoCNMBo0kZ8?start=66"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
