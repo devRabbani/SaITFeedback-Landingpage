@@ -17,7 +17,7 @@ export default function HeroSection({ targetRef }) {
           <div className="btnDiv">
             <a
               className="btn-getStarted"
-              href="https://www.canwebe.tech/form/contact?refer=https://cwbedufeedback.netlify.app"
+              href="https://www.canwebe.in/form/contact?refer=https://cwbedufeedback.netlify.app"
               target="_blank"
               rel="noopener noreferrer"
             >

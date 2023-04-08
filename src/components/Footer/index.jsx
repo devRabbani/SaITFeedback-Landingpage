@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="contact">
         <p>Get started with a demo</p>
         <a
-          href="https://www.canwebe.tech/form/contact?refer=https://cwbedufeedback.netlify.app"
+          href="https://www.canwebe.in/form/contact?refer=https://cwbedufeedback.netlify.app"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -14,7 +14,7 @@ export default function Footer() {
       <footer>
         All rights are reserved by{' '}
         <a
-          href="https://canwebe.tech"
+          href="https://www.canwebe.in"
           target="_blank"
           rel="noopener noreferrer"
         >
